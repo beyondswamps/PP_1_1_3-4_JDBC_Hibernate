@@ -65,6 +65,6 @@ public class Util {
             sessionFactory = configuration.buildSessionFactory(serviceRegistry);
 
         }
-        return sessionFactory.openSession();
+        return sessionFactory.getCurrentSession();
     }
 }
